@@ -54,7 +54,7 @@
 
 ## 🚀 Installation
 
-### Option 1: Install via Official Launchpad PPA (APT)
+### Option 1: Install via Official Launchpad PPA (APT) — Recommended
 
 ```bash
 # 1. Add the official PPA
@@ -78,10 +78,18 @@ sudo apt install smart-float-keyboard
 
 ---
 
-### Option 3: Install via Canonical Snap Store
+### Option 3: Install via Local Snap Package
+
+*(Note: Global Snap Store installation is currently pending Canonical security review for the `uinput` interface).*
+
+To install the built `.snap` package locally:
 
 ```bash
-sudo snap install smart-float-keyboard
+# 1. Install local snap package
+sudo snap install --dangerous ./smart-float-keyboard_1.0.1_amd64.snap
+
+# 2. Connect the kernel input interface
+sudo snap connect smart-float-keyboard:uinput
 ```
 
 ---
@@ -106,7 +114,7 @@ python3 src/main.py
 
 ## 🖥 Usage
 
-After installation, launch **Smart Float Keyboard** by searching for it in the Ubuntu Application Dash, or run:
+Launch **Smart Float Keyboard** from the Ubuntu Application Dash, or run:
 
 ```bash
 smart-keyboard
@@ -114,13 +122,14 @@ smart-keyboard
 
 ---
 
-## 🛠 Building the `.deb` Package Locally
+## 🛠 Building the Packages Locally
 
+### Build Debian `.deb` Package:
 ```bash
 chmod +x build_deb.sh
 ./build_deb.sh
 ```
-The output package will be generated at `build_deb/smart-float-keyboard_1.0.1.deb`.
+The `.deb` file will be generated at `build_deb/smart-float-keyboard_1.0.1.deb`.
 
 ---
 
