@@ -1,0 +1,33 @@
+name: smart-float-keyboard
+base: core24
+version: '1.0.0'
+summary: Modern floating on-screen keyboard with multi-language support
+description: |
+  Smart Float Keyboard is a lightweight, always-on-top virtual keyboard
+  docked to the screen edge. Features non-focus typing into any active window,
+  multi-language support (English, French, Arabic), and Dark/Light themes.
+
+grade: stable
+confinement: strict
+
+apps:
+  smart-float-keyboard:
+    command: bin/python3 $SNAP/src/main.py
+    extensions: [gnome]
+    plugs:
+      - x11
+      - wayland
+      - desktop
+      - desktop-legacy
+      - uinput
+
+parts:
+  smart-float-keyboard:
+    plugin: python
+    source: .
+    stage-packages:
+      - libxcb-cursor0
+      - libxkbcommon-x11-0
+    python-packages:
+      - PyQt6
+      - evdev

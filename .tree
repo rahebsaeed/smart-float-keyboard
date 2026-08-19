@@ -1,0 +1,30 @@
+smart-float-keyboard/
+├── assets/
+│   ├── icons/            # SVG icons for keys & toggle button
+│   ├── styles/
+│   │   ├── dark.qss      # Dark theme stylesheet
+│   │   └── light.qss     # Light theme stylesheet
+│   └── layouts/
+│       └── en_US.json    # Keyboard key mappings & definitions
+├── debian/               # For APT / .deb package building
+│   ├── control
+│   ├── rules
+│   └── changelog
+├── snap/                 # For Snap Store building
+│   └── snapcraft.yaml
+├── src/
+│   ├── __init__.py
+│   ├── main.py           # Application entry point
+│   ├── core/
+│   │   ├── input_engine.py  # UInput/X11 keystroke injector
+│   │   └── focus_manager.py # OS-level focus keeper
+│   ├── ui/
+│   │   ├── floating_dock.py # Small circle toggle pinned to right edge
+│   │   ├── keyboard_view.py # The expandable mini keyboard
+│   │   ├── key_button.py    # Custom individual key widget
+│   │   └── theme_manager.py # Dark/Light switcher
+│   └── utils/
+│       └── config.py        # Settings (theme, size, opacity)
+├── smart-keyboard.desktop # Ubuntu desktop launcher file
+├── setup.py
+└── README.md

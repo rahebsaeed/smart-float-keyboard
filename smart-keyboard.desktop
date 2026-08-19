@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Smart Float Keyboard
+Comment=Professional Floating On-Screen Keyboard for Ubuntu
+Exec=/usr/bin/smart-keyboard
+Icon=smart-keyboard
+Terminal=false
+Type=Application
+Categories=Utility;Accessibility;
+Keywords=keyboard;osk;virtual;floating;
+StartupNotify=false

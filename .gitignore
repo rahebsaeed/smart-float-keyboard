@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+venv/
+env/
+build/
+dist/
+*.egg-info/
+
+# Deb build artifacts
+build_deb/
+debian/.debhelper/
+debian/files
+debian/smart-float-keyboard/
+
+# Snap artifacts
+*.snap
+parts/
+prime/
+stage/
+.snapcraft/
+
+# Local IDE / OS
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.bak
