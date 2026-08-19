@@ -16,7 +16,7 @@ Thank you for your interest in contributing to **Smart Float Keyboard**! This pr
 1. Fork the repository on GitHub.
 2. Clone your fork:
    ```bash
-   git clone https://github.com/your-username/smart-float-keyboard.git
+   git clone https://github.com/rahebsaeed/smart-float-keyboard.git
    cd smart-float-keyboard
    ```
 3. Set up your virtual environment:

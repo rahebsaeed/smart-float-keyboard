@@ -21,11 +21,9 @@
 
 ## 📸 Screenshots
 
-*(Place your screenshots in `docs/screenshots/` and link them here)*
-
 | Dark Obsidian Mode | Clean Light Mode |
 |:---:|:---:|
-| *(Add dark mode picture)* | *(Add light mode picture)* |
+| <img src="docs/screenshots/Screenshot%20from%202026-08-19%2018-59-58.png" alt="Dark Mode Screenshot" width="100%"> | <img src="docs/screenshots/Screenshot%20from%202026-08-19%2019-00-05.png" alt="Light Mode Screenshot" width="100%"> |
 
 ---
 
@@ -39,7 +37,7 @@
   - 🇸🇦 **العربية (Arabic 101)** with direct Unicode support (`ض`, `ص`, `ث`, `ّ`, Harakat)
 - 🔠 **Hardware-Style Dual Character Keys:** Secondary Shift symbols and diacritics displayed directly on keys with active Shift lighting.
 - 🔒 **Shift Lock & Caps Lock:** Persistent shift mode for effortless symbol/capital typing.
-- 🎨 **Dynamic Theming:** Instant one-click switching between **Dark Obsidian** and **Clean Light** themes.
+- 🎨 **Dynamic Theming:** Instant one-click switching between **Dark Obsidian** (`☾`) and **Clean Light** (`☀`) themes.
 - ↔ **Full Freedom of Motion & Resizing:**
   - Drag the keyboard anywhere across your screen.
   - Scale up/down with `[＋]` / `[－]` buttons or drag the corner resize grip.
@@ -55,21 +53,28 @@
 
 ### Option 1: Install via `.deb` Package (Recommended)
 
-1. Download the latest `.deb` release:
+1. Download the latest `.deb` package from the [Releases](https://github.com/rahebsaeed/smart-float-keyboard/releases) page.
+2. Install via APT:
    ```bash
    sudo apt update
    sudo apt install ./smart-float-keyboard_1.0.1.deb
    ```
-2. Launch it from your Ubuntu Dash / Application Menu by searching **"Smart Float Keyboard"**, or run:
+3. Launch it from your Ubuntu Dash / Application Menu by searching **"Smart Float Keyboard"**, or run:
    ```bash
    smart-keyboard
    ```
 
-### Option 2: Run from Source
+### Option 2: Install via Snap Store
+
+```bash
+sudo snap install smart-float-keyboard
+```
+
+### Option 3: Run from Source
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/smart-float-keyboard.git
+git clone https://github.com/rahebsaeed/smart-float-keyboard.git
 cd smart-float-keyboard
 
 # Set up virtual environment
@@ -98,15 +103,15 @@ The output package will be generated at `build_deb/smart-float-keyboard_1.0.1.de
 ## 👤 Author
 
 **RAHEB Aref Mahyoub Saeed**
-- GitHub: [@your-username](https://github.com/your-username)
-- Project: [Smart Float Keyboard](https://github.com/your-username/smart-float-keyboard)
+- GitHub: [@rahebsaeed](https://github.com/rahebsaeed)
+- Repository: [smart-float-keyboard](https://github.com/rahebsaeed/smart-float-keyboard)
 
 ---
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
-Feel free to check the [issues page](../../issues) or submit a Pull Request.
+Feel free to check the [Issues page](https://github.com/rahebsaeed/smart-float-keyboard/issues) or submit a Pull Request.
 
 ## 📄 License
 

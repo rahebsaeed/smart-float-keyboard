@@ -1,6 +1,6 @@
 name: smart-float-keyboard
 base: core24
-version: '1.0.0'
+version: '1.0.1'
 summary: Modern floating on-screen keyboard with multi-language support
 description: |
   Smart Float Keyboard is a lightweight, always-on-top virtual keyboard
