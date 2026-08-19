@@ -1,0 +1,40 @@
+name: CI & Build
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  test-and-build:
+    runs-on: ubuntu-24.04
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.12"
+
+    - name: Install Dependencies
+      run: |
+        sudo apt update
+        sudo apt install -y python3-pyqt6 python3-evdev libxcb-cursor0
+        pip install pytest
+
+    - name: Run Pytest Test Suite
+      run: |
+        pytest -q
+
+    - name: Build Debian (.deb) Package
+      run: |
+        chmod +x build_deb.sh
+        ./build_deb.sh
+
+    - name: Upload .deb Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: smart-float-keyboard-deb
+        path: build_deb/*.deb
