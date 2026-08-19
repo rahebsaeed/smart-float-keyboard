@@ -11,22 +11,25 @@ jobs:
     runs-on: ubuntu-24.04
 
     steps:
-    - uses: actions/checkout@v4
+    - name: Checkout Code
+      uses: actions/checkout@v4
 
-    - name: Set up Python
+    - name: Set up Python 3.12
       uses: actions/setup-python@v5
       with:
         python-version: "3.12"
+        cache: 'pip'
 
-    - name: Install Dependencies
+    - name: Install System Libraries & Python Packages
       run: |
         sudo apt update
-        sudo apt install -y python3-pyqt6 python3-evdev libxcb-cursor0
-        pip install pytest
+        sudo apt install -y libxcb-cursor0 libxkbcommon-x11-0
+        python -m pip install --upgrade pip
+        pip install PyQt6 evdev pytest
 
     - name: Run Pytest Test Suite
       run: |
-        pytest -q
+        pytest -v
 
     - name: Build Debian (.deb) Package
       run: |
