@@ -1,0 +1,7 @@
+smart-float-keyboard (1.0.1) noble; urgency=medium
+
+  * Initial PPA release.
+  * Added English, French AZERTY, and Arabic 101 layouts.
+  * Universal uinput kernel injection and PyQt6 non-focus overlay.
+
+ -- RAHEB Aref Mahyoub Saeed <raheebareef@gmail.com>  Wed, 19 Aug 2026 20:00:00 +0000

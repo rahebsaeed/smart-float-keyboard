@@ -1,0 +1,14 @@
+Source: smart-float-keyboard
+Section: utils
+Priority: optional
+Maintainer: RAHEB Aref Mahyoub Saeed <raheebareef@gmail.com>
+Build-Depends: debhelper-compat (= 13), dh-python
+Standards-Version: 4.6.2
+Homepage: https://github.com/rahebsaeed/smart-float-keyboard
+
+Package: smart-float-keyboard
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}, python3-pyqt6, python3-evdev, libxcb-cursor0
+Description: Smart Float Keyboard
+ A modern, floating virtual on-screen keyboard with non-focus injection,
+ multi-language support (EN, FR, AR), and dark/light themes.

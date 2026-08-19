@@ -1,0 +1,3 @@
+#!/bin/bash
+export QT_QPA_PLATFORM=xcb
+exec python3 /usr/share/smart-float-keyboard/src/main.py "$@"

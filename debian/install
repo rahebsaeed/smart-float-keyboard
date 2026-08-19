@@ -1,0 +1,5 @@
+bin/smart-keyboard usr/bin/
+src/ usr/share/smart-float-keyboard/
+assets/ usr/share/smart-float-keyboard/
+smart-keyboard.desktop usr/share/applications/
+assets/icons/smart-keyboard.svg usr/share/icons/hicolor/scalable/apps/
